@@ -28,8 +28,9 @@ ul {
 ------------*/
 header {
     background-color: #FF6900;
-    padding: calc(88.54 / 2);
+    padding: calc(89.88px / 2);
     color: white;
+    margin-bottom: 50px;
 }
 nav {
     position: fixed;
@@ -60,6 +61,45 @@ nav div ul:nth-of-type(2) {
 /*------------
     MAIN
 ------------*/
+article :first-child {
+    position: relative;
+}
+article :first-child span, article :first-child i {
+    position: absolute;
+}
+.heart {
+    top: 20px;
+    right: 0px;
+    padding: 10px;
+    background-color: white;
+}
+article div span {
+    padding: 5px 10px;
+    color: white;
+}
+.discount-tag {
+    bottom: 30px;
+    left: 0px;
+    background-color: red;
+}
+.sustain-tag {
+    bottom: 30px;
+    left: 60px;
+    background-color: green;
+}
+article div img {
+    width: 100%;
+    display: block;
+}
+.img-hover {
+    display: none;
+}
+article:hover img:first-child {
+    display: none;
+}
+article:hover .img-hover {
+    display: block;
+}
 /*------------
     FOOTER
 ------------*/
