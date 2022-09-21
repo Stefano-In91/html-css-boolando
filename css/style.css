@@ -110,7 +110,9 @@ article:hover img:first-child {
 article:hover .img-hover {
     display: block;
 }
-
+.heart:hover {
+    color: red;
+}
 /*------------
     FOOTER
 ------------*/
