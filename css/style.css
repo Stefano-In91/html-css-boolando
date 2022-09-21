@@ -119,6 +119,7 @@ article:hover .img-hover {
 footer {
     background-color: #1a1a1a;
     padding: 30px 0;
+    margin-top: 150px;
 }
 footer .row{
     justify-content: space-between;
