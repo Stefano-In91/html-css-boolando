@@ -17,9 +17,6 @@
     display: flex;
     flex-wrap: wrap;
 }
-.col {
-    width: calc(100% / 3);
-}
 ul {
     list-style: none;
 }
@@ -32,11 +29,15 @@ header {
     color: white;
     margin-bottom: 50px;
 }
+header .col {
+    width: calc(100% / 3);
+}
 nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 100;
     background-color: #FF6900;
 }
 nav ul {
@@ -61,10 +62,15 @@ nav div ul:nth-of-type(2) {
 /*------------
     MAIN
 ------------*/
+main article.col {
+    width: calc(100% / 3 - 40px);
+    margin: 20px;
+}
+/* Posizionamento tag */
 article :first-child {
     position: relative;
 }
-article :first-child span, article :first-child i {
+article div:first-child span, article div:first-child i {
     position: absolute;
 }
 .heart {
@@ -73,23 +79,28 @@ article :first-child span, article :first-child i {
     padding: 10px;
     background-color: white;
 }
-article div span {
+article div:first-child span {
     padding: 5px 10px;
-    color: white;
 }
 .discount-tag {
+    background-color: red;
+}
+.sustain-tag, .sustain-tag-solo {    
+    background-color: green;
+}
+.discount-tag, .sustain-tag-solo {
     bottom: 30px;
     left: 0px;
-    background-color: red;
 }
 .sustain-tag {
     bottom: 30px;
     left: 60px;
-    background-color: green;
 }
+/* Formattazione immagini e hover */
 article div img {
     width: 100%;
     display: block;
+    margin-bottom: 10px;
 }
 .img-hover {
     display: none;
@@ -100,6 +111,7 @@ article:hover img:first-child {
 article:hover .img-hover {
     display: block;
 }
+
 /*------------
     FOOTER
 ------------*/
@@ -112,4 +124,22 @@ body {
 nav {
     font-size: 20px;
     font-weight: 500;
+}
+/* colore tag e testo sotto immagine */
+article div:first-child span {
+    color: white;
+}
+small {
+    color: gray;
+    font-size: 16px;
+}
+h3 {
+    text-transform: uppercase;
+}
+.final-price {
+    color: red;
+    font-weight: 700;
+}
+.before-discount {
+    text-decoration: line-through;
 }
