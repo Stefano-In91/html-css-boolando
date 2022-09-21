@@ -35,9 +35,24 @@ nav {
     right: 0;
     background-color: #FF6900;
 }
+nav .row col {
+}
 nav a {
     text-decoration: none;
     color: inherit;
+    padding-right: 10px;
+}
+nav a:last-child{
+    padding-right: 0;
+}
+.logo {
+    width: 200px;
+}
+nav div:nth-child(2) {
+    text-align: center;
+}
+nav div:nth-child(3) {
+    text-align: right;
 }
 /*------------
     MAIN
