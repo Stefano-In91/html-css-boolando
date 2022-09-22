@@ -30,7 +30,7 @@ ul li a {
 ------------*/
 header {
     background-color: #FF6900;
-    padding: calc(89.88px / 2);
+    padding: calc(84.52px / 2);
     margin-bottom: 50px;
 }
 header .col {
@@ -43,6 +43,7 @@ nav {
     right: 0;
     z-index: 100;
     background-color: #FF6900;
+    box-shadow: 0 1px 0 0 gray;
 }
 nav ul {
     align-items: center;
@@ -50,6 +51,7 @@ nav ul {
 .logo {
     width: 200px;
     padding: 20px 0;
+    vertical-align: middle;
 }
 nav div :nth-child(2) {
     text-align: center;
