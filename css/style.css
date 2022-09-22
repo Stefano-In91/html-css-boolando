@@ -25,6 +25,9 @@ ul li a {
     color: inherit;
     padding-right: 15px;
 }
+i {
+    display: inline-block;
+}
 /*------------
     HEADER
 ------------*/
@@ -35,6 +38,7 @@ header {
 }
 header .col {
     width: calc(100% / 3);
+    padding: 0 10px 0 20px;
 }
 nav {
     position: fixed;
@@ -58,6 +62,7 @@ nav div :nth-child(2) {
 }
 nav div ul:nth-of-type(2) {
     justify-content: flex-end;
+    text-align: right;
 }
 
 /*------------
@@ -68,9 +73,11 @@ main article.col {
     margin: 20px;
 }
 /* Posizionamento tag */
+/* Prima div con img relative */
 article :first-child {
     position: relative;
 }
+/* Oggetti da sovrappore a img in absolute */
 article div:first-child span, article div:first-child i {
     position: absolute;
 }
@@ -83,6 +90,7 @@ article div:first-child span, article div:first-child i {
 article div:first-child span {
     padding: 5px 10px;
 }
+/* Formattazione tag */
 .discount-tag {
     background-color: red;
 }
@@ -126,6 +134,9 @@ footer {
 footer .row{
     justify-content: space-between;
     align-items: center;
+}
+footer .row .col {
+    padding: 0 10px 0 20px;
 }
 footer h3, footer h4 {
     margin-bottom: 10px;
