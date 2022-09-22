@@ -162,6 +162,9 @@ header, footer {
 article div:first-child span {
     color: white;
 }
+.heart {
+    font-size: 20px;
+}
 small {
     color: gray;
     font-size: 16px;
